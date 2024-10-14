@@ -1,0 +1,43 @@
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+*.bin
+
+# Output of `go build`
+/bin/
+/build/
+*.out
+
+/tmp
+
+# Vendor directory for Go modules
+/vendor/
+
+# Dependency directories (for example if you're using dep)
+Gopkg.lock
+Gopkg.toml
+
+# Go module files
+/go.sum
+/go.mod
+
+# IDE and editor config files
+.idea/
+.vscode/
+*.swp
+
+# Log and cache files
+*.log
+*.cache
+
+# Test binaries and coverage reports
+*.test
+*.coverprofile
+coverage.out
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
