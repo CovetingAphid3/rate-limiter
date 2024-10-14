@@ -11,6 +11,7 @@
 *.out
 
 /tmp
+todo.md
 
 # Vendor directory for Go modules
 /vendor/
