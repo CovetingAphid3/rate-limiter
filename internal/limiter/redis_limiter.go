@@ -14,7 +14,7 @@ type RedisLimiter struct {
     key    string
     burst  int
     interval time.Duration
-    script string // Add a field to hold the Lua script
+    // script string 
 }
 
 // NewRedisLimiter creates a new Redis-based rate limiter

@@ -6,6 +6,7 @@ import (
 	"log"
 	"net/http"
 
+	"github.com/CovetingAphid3/rate-limiter/internal/config"
 	"github.com/CovetingAphid3/rate-limiter/internal/limiter"
 	"github.com/go-redis/redis/v8"
 )
@@ -13,10 +14,11 @@ import (
 var ctx = context.Background()
 
 func main() {
+    config.Test()
     // Initialize Redis client
     rdb := redis.NewClient(&redis.Options{
         Addr: "localhost:6379", // Redis server address
-        Password: "",            // No password set (adjust if needed)
+        Password: "",           
         DB: 0,                   // Use default DB
     })
 
